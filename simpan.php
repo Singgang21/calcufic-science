@@ -34,7 +34,7 @@
 						$file_foto = "-";
 					}
 
-					mysqli_query($connect, "INSERT INTO biodata(nim,nama,alamat,telp,foto)
+					mysqli_query($connect, "INSERT INTO data_user(nim,nama,alamat,telp,foto)
 					VALUES('$nim',
 							'$nama',
 							'$alamat',
@@ -66,7 +66,7 @@
 						$file_foto = $foto_awal;
 					}
 
-					mysqli_query($connect, "UPDATE biodata SET 
+					mysqli_query($connect, "UPDATE data_user SET 
 						nim='$nim ',
 						nama='$nama ',
 						alamat='$alamat',
@@ -107,21 +107,14 @@
 			break;
 		case 'admin':
 			if ($cmd == "tambah") {
-				mysqli_query($connect, "INSERT INTO user(nama,username,password,nim,level)
-					VALUES(
-					'$_POST[nama]',
+				mysqli_query($connect, "INSERT INTO admin(nama,username,password)
+					VALUES('$_POST[nama]',
 					'$_POST[username]',
-					MD5('$_POST[password]'),
-					'$_POST[nim]',
-					'$_POST[level]')");
-
+					MD5('$_POST[password]'))");
 			} elseif ($cmd == "edit") {
-				mysqli_query($connect, "UPDATE user SET 
-						nama='$_POST[nama]',
+				mysqli_query($connect, "UPDATE admin SET nama='$_POST[nama]',
 						username='$_POST[username]',
-						password=MD5('$_POST[password]'),
-						nim='$_POST[nim]',
-						level='$_POST[level]'
+						password=MD5('$_POST[password]')
 						WHERE id='$_POST[id]'");
 			} else {
 				die(); //jika bukan tambah atau edit, lalu apa ? die aja lah :p

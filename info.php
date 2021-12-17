@@ -1,5 +1,5 @@
 <?php require_once('config/main.php');
-$biodata = mysqli_query($connect,"select * from biodata");
+$data_user = mysqli_query($connect,"select * from data_user");
 $data_history=mysqli_query($connect,"select * from history");
  ?>
 <div class="row">
@@ -8,7 +8,7 @@ $data_history=mysqli_query($connect,"select * from history");
       <!-- small box -->
       <div class="small-box bg-green">
         <div class="inner">
-          <h3><?php echo mysqli_num_rows($biodata); ?></h3>
+          <h3><?php echo mysqli_num_rows($data_user); ?></h3>
           <p>Data User</p>
         </div>
         <div class="icon">

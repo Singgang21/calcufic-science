@@ -1,5 +1,5 @@
 <?php require_once('config/main.php');
-$query=mysqli_query($connect,"select * from biodata");
+$query=mysqli_query($connect,"select * from data_user");
  ?>
 <div class="box">
     <div class="box-header">

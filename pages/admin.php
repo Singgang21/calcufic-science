@@ -1,5 +1,5 @@
 <?php require_once('config/main.php'); 
-$query=mysqli_query($connect,"select * from user");
+$query=mysqli_query($connect,"select * from admin");
 ?>
 <div class="box">
     <div class="box-header">
@@ -13,14 +13,11 @@ $query=mysqli_query($connect,"select * from user");
 		<thead>
 			<tr>
 		    <th>NO</th>
-		    <th>NIM</th>
 		    <th>NAMA</th>
 		    <th>USERNAME</th>
 		    <th>PASSWORD</th>
-		    <th>LEVEL</th>
-		    <th>
-				<?php if (isset($_SESSION['username'])): ?>
-		    </th>
+		    <?php if (isset($_SESSION['username'])): ?>
+		    <th></th>
 			<?php endif; ?>
 		  </tr>
 		</thead>
@@ -31,12 +28,10 @@ $query=mysqli_query($connect,"select * from user");
 		  ?>
 		  <tr>
 		    <td><?php echo $no++; ?></td>          
-		    <td><?php echo $q['nim']?></td>
 		    <td><?php echo $q['nama']?></td>
 		    <td><?php echo $q['username']?></td>
 		    <td><?php echo MD5($q['password'])?></td>
 		    <?php if (isset($_SESSION['username'])): ?>
-		    <td><?php echo $q['level']?></td>
 		    <td>
 		    	<a class="btn btn-success" href="edit.php?edit=<?php echo $_GET['page']; ?>&id=<?php echo $q['id']; ?>">Edit</a>
 		    	<a class="btn btn-danger" onclick="return confirm('Apakah anda yakin akan menghapus data ini?')" href="hapus.php?hapus=<?php echo $_GET['page']; ?>&id=<?php echo $q['id']; ?>">Hapus</a>

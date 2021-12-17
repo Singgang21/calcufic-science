@@ -5,7 +5,7 @@ $user 	= $_POST['tUser'];
 $pwd   	= MD5($_POST['tPwd']); // pwd berupa md5
 
 // menyeleksi data user yang sesuai kebutuhan
-$hasil  = mysqli_query($connect,"SELECT * FROM user WHERE username='$user' AND password='$pwd'");
+$hasil  = mysqli_query($connect,"SELECT * FROM admin WHERE username='$user' AND password='$pwd'");
 
  // menghitung jumlah data yang ada
 $cek = mysqli_num_rows($hasil);
@@ -18,10 +18,9 @@ if ($cek > 0 ){
 		$_SESSION['username'] = $data['username'];
 		$_SESSION['password'] = $data['password'];
 		$_SESSION['nama'] = $data['nama'];
-		$_SESSION['nim'] = $data['nim'];
 		
 	
-	header('Location:index.php');
+	header('Location:dasboard.php');
 }else{
 	// pesan gagal
    echo "<script>alert('GAGAL..!!!!!, Silakan Ulangi Lagi'); window.location = 'login.php'</script>";

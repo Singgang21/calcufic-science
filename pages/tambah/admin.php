@@ -12,10 +12,6 @@
 	           <input type="hidden" name="cmd" value="tambah">
 	            <!-- text input -->
 	            <div class="form-group">
-	              <label>NIM</label>
-	              <input type="text" name="nim" class="form-control" placeholder="nim" value=""/>
-	            </div>
-	            <div class="form-group">
 	              <label>Nama</label>
 	              <input type="text" name="nama" class="form-control" placeholder="Nama" value=""/>
 	            </div>
@@ -26,10 +22,6 @@
 	            <div class="form-group">
 	              <label>Password</label>
 	              <input type="password" name="password" class="form-control" placeholder="password" value=""/>
-	            </div>
-	            <div class="form-group">
-	              <label>Level</label>
-	              <input type="text" name="level" class="form-control" placeholder="level" value=""/>
 	            </div>
 
 	            <button type="submit" class="btn btn-success"> <i class="fa fa-save"></i> Simpan</button>

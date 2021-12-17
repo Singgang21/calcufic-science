@@ -1,5 +1,5 @@
 <?php require_once('config/main.php'); 
-$query=mysqli_query($connect,"select * from user where id=".$_GET['id']);
+$query=mysqli_query($connect,"select * from admin where id=".$_GET['id']);
 $data = mysqli_fetch_array($query);
 ?>
 <section>
@@ -27,14 +27,6 @@ $data = mysqli_fetch_array($query);
 	            <div class="form-group">
 	              <label>Password</label>
 	              <input type="password" name="password" class="form-control" placeholder="Password" value="<?php echo $data['password']; ?>"/>
-	            </div>
-	            <div class="form-group">
-	              <label>NIM</label>
-	              <input type="nim" name="nim" class="form-control" placeholder="nim" value="<?php echo $data['nim']; ?>"/>
-	            </div>
-	            <div class="form-group">
-	              <label>Level</label>
-	              <input type="level" name="level" class="form-control" placeholder="level" value="<?php echo $data['level']; ?>"/>
 	            </div>
 
 	            <button type="submit" class="btn btn-success"> <i class="fa fa-save"></i> Simpan</button>

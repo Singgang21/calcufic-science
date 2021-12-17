@@ -1,12 +1,10 @@
-<?php session_start(); ?>
-<?php
+<?php session_start(); ?> 
+<?php 
 require_once('config/main.php');
-// $id = $_GET['id'];
-$query = mysqli_query($connect, "SELECT nim,nama from user where id =1");
-
+    $query = mysqli_query($connect,"SELECT nim,nama from admin where id =1");
 ?>
 
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 
 <head>
@@ -22,15 +20,17 @@ $query = mysqli_query($connect, "SELECT nim,nama from user where id =1");
 
 <body class="skin-blue">
     <div class="wrapper">
+
         <header class="main-header">
             <!-- Logo -->
-            <a href="index.php" class="logo"><b>Calculator </b>Scientific</a>
+            <a href="dasboard.php" class="logo"><b>Calculator </b>Scientific</a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top" role="navigation">
                 <!-- Sidebar toggle button-->
                 <a href="#" class="sidebar-toggle" data-toggle="collapse" role="button">
                     <span class="sr-only">Toggle navigation</span>
                 </a>
+
             </nav>
         </header>
         <!-- Left side column. contains the logo and sidebar -->
@@ -43,14 +43,26 @@ $query = mysqli_query($connect, "SELECT nim,nama from user where id =1");
                         <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                     </div>
                     <div class="pull-left info">
-                        <p><?php (isset($_SESSION['nama'])) ? print_r($_SESSION['nama']) : print_r('guest'); ?></p>
+                        <p><?php if (!isset($_SESSION['nama'])) {
+                                echo "asing";
+                            }; ?></p>
 
                         <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                     </div>
                 </div>
                 <!-- sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu">
-                    <li class="treeview <?php if (!isset($_GET['page'])) {echo "active";} ?>">
+                    <li class="header">MENU UTAMA</li>
+                    <li class="treeview <?php if (!isset($_GET['page'])) {
+                                            echo "active";
+                                        } ?>">
+                        <a href="dasboard.php">
+                            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="treeview <?php if (!isset($_GET['page'])) {
+                                            echo "active";
+                                        } ?>">
                         <a href="kalkulator.php">
                             <i class="fa fa-calculator"></i> <span>Calculator</span>
                         </a>
@@ -77,31 +89,35 @@ $query = mysqli_query($connect, "SELECT nim,nama from user where id =1");
         <!-- Right side column. Contains the navbar and content of the page -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
-            <section class="content-header">
-                    <form action="" method="post"  style="margin-left: 20px;">
-                        <table class="row" style="display: none;" id="row">
-                            <tr>
-                                <td style="margin-bottom:10px;">NIM</td>
-                                <td><input class="form-control" style="margin-left:15px;margin-bottom:10px;" type="text" id=nim value="<?php (isset($_SESSION['nim'])) ?  print_r($_SESSION['nim']) : print_r('guest'); ?>"></td>
-                            </tr>
-                            <tr>
-                                <td>NAMA</td>
-                                <td><input class="form-control" style="margin-left:15px;" type="text" id=nama value="<?php (isset($_SESSION['nama'])) ?  print_r($_SESSION['nama']) :  print_r('guest'); ?>"></td>
-                            </tr>
-                        </table>
-                    </form>
+
+            <section class="content-header"> 
+                <form action="" method="post">             
+                    <table class="row" style="display: none;" id="row">
+                    <?php
+                    $no=1;
+                    while($q=mysqli_fetch_array($query)){
+                    ?>
+                        <tr>
+                            <td style="margin-bottom:10px;">NIM</td>
+                            <td><input style="margin-left:15px;margin-bottom:10px;" type="text" id=nim value="<?php echo $q['nim']?>" ></td>
+                        </tr>
+                        <tr>
+                            <td>NAMA</td>
+                            <td><input style="margin-left:15px;" type="text" id=nama value="<?php echo $q['nama']?>"></td>
+                        </tr>
+                            <?php } ?>
+                    </table>
+                    </form>  
             </section>
-            
 
             <!-- Main content -->
             <section class="content">
                 <!-- Small boxes (Stat box) -->
-               
-                <div id="app">
 
+                <div id="app">
                     <div class="calculator">
                         <button @click="changeModeEvent" class="toggle-button">
-                            <p v-if="changeMode">Standart Calculator &nbsp; &nbsp; ⚈</p>
+                            <p v-if="changeMode">Standart  Calculator &nbsp; &nbsp; ⚈</p>
                             <p v-else>Scientific Calculator &nbsp; &nbsp; ⚆</p>
                         </button>
                         <div class="results">
@@ -170,23 +186,18 @@ $query = mysqli_query($connect, "SELECT nim,nama from user where id =1");
                                     <button onclick="klik()" class="button equal-sign" @click="press">=</button>
                         </div>
                     </div>
-                    
-                    <div class="row">
-                        <div v-for="(find, index) in history">
-                            <input class="form-control" v-model="find" :key="index">
-                        </div>
-                    </div>
                 </div>
-                < <!-- Main row -->
-                    <div class="row">
-                        <!-- Left col -->
-                        <section class="col-lg-12">
+<
 
-                        </section><!-- /.Left col -->
-                        <!-- right col (We are only adding the ID to make the widgets sortable)-->
+                <!-- Main row -->
+                <div class="row">
+                    <!-- Left col -->
+                    <section class="col-lg-12">
 
-                    </div><!-- /.row (main row) -->
+                    </section><!-- /.Left col -->
+                    <!-- right col (We are only adding the ID to make the widgets sortable)-->
 
+                </div><!-- /.row (main row) -->
 
             </section><!-- /.content -->
         </div><!-- /.content-wrapper -->
@@ -196,7 +207,7 @@ $query = mysqli_query($connect, "SELECT nim,nama from user where id =1");
             <strong>Copyright &copy; <?php echo date('Y'); ?> <a href="#">Calculator Scientific</a></strong>
         </footer>
     </div>
-    <!-- ./wrapper -->
+    <!-- ./wrapper -->    
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
     <script src="script_kalkulator.js"></script>
     <script src="plugins/jQueryUI/jquery-ui.min.js" type="text/javascript"></script>
@@ -211,10 +222,9 @@ $query = mysqli_query($connect, "SELECT nim,nama from user where id =1");
     <script src="dist/js/pages/dashboard.js" type="text/javascript"></script>
     <script src="dist/js/demo.js" type="text/javascript"></script>
     <script>
-        function klik() {
+        function klik(){
             var row = document.getElementById('row')
-            row.style.removeProperty('display')
-            console.log('hello');
+            row.style.removeProperty('display')            
         }
     </script>
 </body>

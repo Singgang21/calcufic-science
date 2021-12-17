@@ -1,5 +1,5 @@
 <?php require_once('config/main.php');
-$biodata = mysqli_query($connect,"select * from biodata");
+$data_user = mysqli_query($connect,"select * from data_user");
 $data_history=mysqli_query($connect,"select * from history");
  ?>
 <div class="row">
@@ -7,8 +7,8 @@ $data_history=mysqli_query($connect,"select * from history");
 	  <!-- Bar chart -->
 	  <div class="box box-primary">
 	    <div class="box-header">
-	      <!-- <i class="fa fa-bar-chart-o"></i>
-	      <h3 class="box-title">Grafik Batang</h3> -->
+	      <i class="fa fa-bar-chart-o"></i>
+	      <h3 class="box-title">Grafik Batang</h3>
 	    </div>
 	    <div class="box-body">
 	      <div id="bar-chart" style="height: 300px;"></div>
@@ -18,8 +18,8 @@ $data_history=mysqli_query($connect,"select * from history");
 	<div class="col-md-6">
 		<div class="box box-primary">
             <div class="box-header">
-              <!-- <i class="fa fa-bar-chart-o"></i>
-              <h3 class="box-title">Grafik Donut</h3> -->
+              <i class="fa fa-bar-chart-o"></i>
+              <h3 class="box-title">Grafik Donut</h3>
             </div>
             <div class="box-body">
               <div id="donut-chart" style="height: 300px;"></div>
@@ -45,7 +45,7 @@ $data_history=mysqli_query($connect,"select * from history");
          */
 
         var bar_data = {
-          data: [ ["Biodata", <?php echo mysqli_num_rows($biodata); ?>], 
+          data: [ ["Data User", <?php echo mysqli_num_rows($data_user); ?>], 
           ["Data History", <?php echo mysqli_num_rows($data_history); ?>]],
           color: "#00A3CB"
         };
@@ -76,7 +76,7 @@ $data_history=mysqli_query($connect,"select * from history");
 
         var donutData = [
 
-          {label: "Biodata", data: <?php echo mysqli_num_rows($biodata); ?>, color: "#00A65A"},
+          {label: "Data User", data: <?php echo mysqli_num_rows($data_user); ?>, color: "#00A65A"},
       
           {label: "Data Teknisi", data: <?php echo mysqli_num_rows($data_history); ?>, color: "#DD4B39"}
         ];

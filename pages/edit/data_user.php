@@ -1,5 +1,5 @@
 <?php require_once('config/main.php');
-$query=mysqli_query($connect,"select * from biodata where id='$_GET[id]'");
+$query=mysqli_query($connect,"select * from data_user where id='$_GET[id]'");
 $data = mysqli_fetch_array($query);
 if(empty($data['foto'])or($data['foto']=='-'))
 				$foto = "user2-160x160.jpg";

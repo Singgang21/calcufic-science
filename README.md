@@ -1,7 +1,10 @@
 <<<<<<< HEAD
-# CALCULATOR SCIENTIFIC
-Aplikasi Simple CRUD dengan PHP dan Admin LTE Template
-=======
-# Calculator
-Aplikasi Simple
->>>>>>> 91dd04505250df831e21c2c22ccae58b7473bd19
+#  APLIKASI SIMPLE CRUD DENGAN CALCULATOR SCIENTIFIC MENGGUNAKAN BAHASA HTML, PHP, CSS, DAN JS
+===============================
+Tugas Ulangan Akhir Semester dari Mata kuliah :
+Desain Pemograman Web
+
+Kelompok 9 : 
+- Bintang Adyatama (2041720130) TI-2G
+- Rosi  Latansa Salsabela (2041720026) TI-2G
+- Galiley Singgang M.Y (2141723001) TI-2G

@@ -62,7 +62,7 @@
               </a>
             </li>
             <li class="treeview <?php if(!isset($_GET['page'])) { echo "active"; } ?>">
-              <a href="kalkulator.php">
+              <a href="kalkulator/kalkulator.php">
                 <i class="fa fa-calculator"></i> <span>Calculator</span> 
               </a>
             </li>

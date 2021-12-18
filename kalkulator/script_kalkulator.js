@@ -3,6 +3,7 @@ let app = new Vue({
     data() {
         return {
             current: '',
+            history: [], // history
             changeMode: true
         };
 
@@ -11,7 +12,6 @@ let app = new Vue({
         press: function(event) {
             let me = this;
             let key = event.target.textContent;
-
             if (
                 key != '=' &&
                 key != 'C' &&
@@ -36,7 +36,7 @@ let app = new Vue({
                 me.current += key;
 
             } else if (key === '=') {
-
+                let a = me.current
                 if (me.current.indexOf('^') > -1) {
                     let base = me.current.slice(0, me.current.indexOf('^'));
                     let exponent = me.current.slice(me.current.indexOf('^') + 1);
@@ -44,7 +44,8 @@ let app = new Vue({
                 } else {
                     me.current = eval(me.current);
                 }
-
+                me.history.push(a + "=" + me.current)
+                    // console.log(me.history);
             } else if (key === 'C') {
 
                 me.current = '';

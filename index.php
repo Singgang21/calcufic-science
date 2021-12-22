@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">   <!-- Animate On Scroll Library -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet"> <!-- Animate On Scroll Library -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -40,8 +40,8 @@
         <!-- image logo -->
         <a href="index.php" class="logo"><img src="assets/img/logoCal.png" alt="" class="img-fluid"></a>
         <h1 class="logo"><a href="index.php">CalculatorScientific</a></h1>
-      </div>      
-      
+      </div>
+
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -50,7 +50,7 @@
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li class="dropdown"><a href="#"><span>Service</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#instruction">Calculator Scientific</a></li>              
+              <li><a href="#instruction">Calculator Scientific</a></li>
               <li><a href="#formulas">Formulary</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
@@ -81,7 +81,10 @@
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
           <div class="icon-box">
             <div class="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path fill="none" d="M0 0h24v24H0z"/><path d="M21 21h-8V6a3 3 0 0 1 3-3h5a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1zm-10 0H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a3 3 0 0 1 3 3v15zm0 0h2v2h-2v-2z" fill="rgba(36,135,206,1)"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path d="M21 21h-8V6a3 3 0 0 1 3-3h5a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1zm-10 0H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a3 3 0 0 1 3 3v15zm0 0h2v2h-2v-2z" fill="rgba(36,135,206,1)" />
+              </svg>
             </div>
             <h4 class="title"><a href="">How to Use</a></h4>
             <p class="description">Panduan ini memberi petunjuk informatif cara menggunakan Calculator Scientific secara efektif </p>
@@ -100,7 +103,13 @@
           <div class="icon-box">
             <div class="icon"><i class="ri-number-2"></i></div>
             <h4 class="title"><a href="">Keyboard Input</a></h4>
-            <p class="description">Jika kamu lebih suka input keyboard rumus matematika, kamu dapat mengetik langsung ke bilah input. Menekan akan memulai penghitungan.</p>
+            <p class="description">Jika lebih suka input rumus dengan keyboard, kamu dapat mengetik langsung ke bilah input. <br>
+              Menekan <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path d="M7.828 11H20v2H7.828l5.364 5.364-1.414 1.414L4 12l7.778-7.778 1.414 1.414z" />
+              </svg>
+              <i>(enter)</i> akan memulai penghitungan.
+            </p>
           </div>
         </div>
 
@@ -130,7 +139,7 @@
         <div class="row content justify-content-center">
           <div class="col-lg-10">
             <p>
-              Kamu dapat mengoperasikan kalkulator langsung dari keyboard, serta menggunakan tombol dengan mouse kamu. 
+              Kamu dapat mengoperasikan kalkulator langsung dari keyboard, serta menggunakan tombol dengan mouse kamu.
               Selain itu terdapat beberapa fitur yang kami tawarkan dan pastinya akan memudahkan kamu sebagai pengguna, antara lain :
             </p>
             <ul>
@@ -140,7 +149,7 @@
               <li><i class="ri-check-double-line"></i> Pustaka Rumus memudahkan pengguna dalam proses menghitung</li>
             </ul>
             <a href="#" class="btn-learn-more">Learn More</a>
-          </div>          
+          </div>
         </div>
 
       </div>
@@ -265,7 +274,7 @@
               <h4><a href="https://web2.0calc.com/formulary/math/geometry">Geometry</a></h4>
               <p>Geometri, ilmu ukur, atau ilmu bangun adalah cabang matematika yang bersangkutan dengan pertanyaan bentuk, ukuran, posisi relatif gambar, dan sifat ruang.</p>
             </div>
-          </div>         
+          </div>
         </div>
 
         <div class="row mt-4 justify-content-center">
@@ -309,7 +318,7 @@
         </div>
       </div>
     </section><!-- End Login Section -->
-    
+
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
       <div class="container" data-aos="fade-up">
@@ -396,7 +405,7 @@
               <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Apakah website Calculator Scientific ini berbayar? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                 <p>
-                  Tidakkk, Gratis benget looo! 
+                  Tidakkk, Gratis benget looo!
                 </p>
               </div>
             </li>
@@ -409,8 +418,8 @@
                 </p>
                 <i class="bx bx-chevron-right">Klik icon relaod yang ada dipojok kiri atas web browser kamu, atau</i>
                 <i class="bx bx-chevron-right">Klik kanan pada halaman web CalculatorScientific, lalu pilih reload, atau</i>
-                <i class="bx bx-chevron-right">Klik tombol f5 atau bisa dengan sortcut Ctrl+R melalui keyboardmu</i> 
-                <p>Semoga bisa mengatasi kendalamu ya, kalau masih belum bisa langsung saja contact kami :)</p>       
+                <i class="bx bx-chevron-right">Klik tombol f5 atau bisa dengan sortcut Ctrl+R melalui keyboardmu</i>
+                <p>Semoga bisa mengatasi kendalamu ya, kalau masih belum bisa langsung saja contact kami :)</p>
               </div>
             </li>
 
@@ -448,6 +457,32 @@
       </div>
     </section><!-- End Frequently Asked Questions Section -->
 
+    <!-- ======= Modal Section ======== -->
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Launch static backdrop modal
+      </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Hello Calclovers!</h5>
+          </div>
+          <div class="modal-body">
+            Terima kasih telah menghubungi kami :) <br>
+            Kritik dan saran anda sangat membantu pengembangan Calculator Scinetific lebih baik lagi.
+            <p><b>See you, datang lagi yaa...</b></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Oke</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Section  -->
+
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
@@ -456,9 +491,9 @@
           <h2>Contact</h2>
           <p>Politeknik Negeri Malang Jl. Soekarno Hatta No.9, Jatimulyo, Kec. Lowokwaru, Kota Malang, Jawa Timur 65141</p>
         </div>
-        
+
         <div>
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15806.037856041943!2d112.6238328613159!3d-7.946186837381535!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78827687d272e7%3A0x789ce9a636cd3aa2!2sPoliteknik%20Negeri%20Malang!5e0!3m2!1sid!2sid!4v1639727574043!5m2!1sid!2sid" frameborder="0" allowfullscreen></iframe>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15806.017571614037!2d112.6156684!3d-7.9467136!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x789ce9a636cd3aa2!2sPoliteknik%20Negeri%20Malang!5e0!3m2!1sid!2sid!4v1639803514543!5m2!1sid!2sid" frameborder="0" allowfullscreen></iframe>
         </div>
 
         <div class="row mt-5">
@@ -489,7 +524,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="#" method="post" class="php-email-form">
+            <form action="" method="post" class="php-email-form" id="myForm">
               <div class="row justify-content-center">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -502,17 +537,65 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>              
-              <div class="text-center"><button type="submit">Send Message</button></div>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="text-center">
+                <button id="myBtn" name="myBtn" type="submit">Send Message</button>
+              </div>
             </form>
 
           </div>
 
         </div>
 
-      </div>     
+      </div>
     </section><!-- End Contact Section -->
+
+    <!-- call modal dialog -->
+
+
+    <!-- <?php
+          // extract($_POST);
+          //   if (isset($_POST["submit"])) {
+          //     echo "<script>
+          //           $('myBtn').click(function(){
+          //               $('#myModal').modal('show');
+          //               var myInput = document.getElementById(myForm);
+          //                 if (myInput && myInput.value) {
+          //                   alert(My input has a value!);
+          //                 }
+          //           });
+          //           </script>";
+          //   }
+          extract($_POST);
+          if (isset($_POST["submit"])) {
+            // Checking For Blank Fields..
+            if ($_POST["name"] == "" || $_POST["email"] == "" || $_POST["subject"] == "" || $_POST["message"] == "") {
+              echo "Please fill out everything! We need to know who you are, and why you want to get in touch with us!";
+            } else {
+              // Check if the "Sender's Email" input field is filled out
+              $email = $_POST['email'];
+              // Sanitize E-mail Address
+              $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+              // Validate E-mail Address
+              $email = filter_var($email, FILTER_VALIDATE_EMAIL);
+              $emailConfirmed = $_POST['email'];
+              if (!$email) {
+                echo "Don't forget to include your email adress! Otherwise we can't get back to you.";
+              } else {
+                $subject = $_POST['subject'];
+                $message = $_POST['message'];
+                $headers =  'From:' . $emailConfirmed . "\r\n"; // Sender's Email
+                $headers .= 'Cc:' . $emailConfirmed . "\r\n"; // Carbon copy to Sender
+                // Message lines should not exceed 70 characters (PHP rule), so wrap it
+                $message = wordwrap($message, 70);
+                // Send Mail By PHP Mail Function
+                mail("marc.murray.92@gmail.com", $subject, $message, $headers);
+                echo "<script>$('#myModal').modal('show')</script>";
+              };
+            }
+          }
+          ?> -->
 
   </main><!-- End #main -->
 
@@ -550,7 +633,7 @@
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#login">Calculator Standart</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#login">Calculator Scientific</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#formulas">Formulary</a></li>                           
+              <li><i class="bx bx-chevron-right"></i> <a href="#formulas">Formulary</a></li>
             </ul>
           </div>
 
@@ -572,7 +655,7 @@
         <div class="copyright">
           &copy; Copyright <strong><span>CaclculatorScientific</span></strong>. All Rights Reserved
         </div>
-        <div class="credits">         
+        <div class="credits">
           Designed by <a href="#team">TeamProject</a>
         </div>
       </div>
@@ -584,7 +667,7 @@
         <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
-  </footer><!-- End Footer -->  
+  </footer><!-- End Footer -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -596,11 +679,39 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
-  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // $("#myBtn").click(function() {
+      //   $("#myModal").modal('hide');
 
+
+      // 
+      $('#myForm').submit(function(e) {
+        e.preventDefault()
+       
+        // let name = $('#name').val()
+        // let email = $('#email').val()
+        // let subject = $('#subject').val()
+        // let message = $('#message').val()
+        // console.log(name)
+        // if (name == null) {
+        //   console.log('kosong')
+        // } else {
+        //   " "
+        // }; // don't submit multiple times
+        // this.submit(); // use the native submit method of the form element
+        $('#myModal').modal('show'); //Open the model
+
+      });
+    });
+  </script>
 </body>
 
 </html>
